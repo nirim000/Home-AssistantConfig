@@ -1,0 +1,107 @@
+- id: '1581248273347'
+  alias: Turn off the lights when I leave home
+  description: ''
+  trigger:
+  - entity_id: person.nirim_2
+    event: leave
+    platform: zone
+    zone: zone.home
+  condition: []
+  action:
+  - device_id: ae46d6f2e69b440eb61d79ce90bc4d73
+    domain: light
+    entity_id: light.tas_bulb1
+    type: turn_off
+  - device_id: bb739f7d35e24bdd852daca9344abb56
+    domain: light
+    entity_id: light.tas_bulb2
+    type: turn_off
+  - device_id: dd75ae5601e34bea90ee515ccf399637
+    domain: light
+    entity_id: light.tas_bulb3
+    type: turn_off
+- id: '1581248413802'
+  alias: Turn on the lights when I get home
+  description: ''
+  trigger:
+  - entity_id: person.nirim_2
+    event: enter
+    platform: zone
+    zone: zone.home
+  condition:
+  - after: sunset
+    before: sunrise
+    condition: sun
+  action:
+  - device_id: ae46d6f2e69b440eb61d79ce90bc4d73
+    domain: light
+    entity_id: light.tas_bulb1
+    type: turn_on
+  - device_id: bb739f7d35e24bdd852daca9344abb56
+    domain: light
+    entity_id: light.tas_bulb2
+    type: turn_on
+  - device_id: dd75ae5601e34bea90ee515ccf399637
+    domain: light
+    entity_id: light.tas_bulb3
+    type: turn_on
+- id: '1581248895457'
+  alias: Turn on the light at sunset
+  description: ''
+  trigger:
+  - event: sunset
+    platform: sun
+  condition:
+  - condition: zone
+    entity_id: person.nirim_2
+    zone: zone.home
+  action:
+  - data: {}
+    service: homeassistant.turn_on
+- id: '1581249340956'
+  alias: Turn off the light at sunrise
+  description: ''
+  trigger:
+  - event: sunrise
+    platform: sun
+  condition: []
+  action:
+  - device_id: ae46d6f2e69b440eb61d79ce90bc4d73
+    domain: light
+    entity_id: light.tas_bulb1
+    type: turn_off
+  - device_id: bb739f7d35e24bdd852daca9344abb56
+    domain: light
+    entity_id: light.tas_bulb2
+    type: turn_off
+  - device_id: dd75ae5601e34bea90ee515ccf399637
+    domain: light
+    entity_id: light.tas_bulb3
+    type: turn_off
+- id: '1581493145660'
+  alias: Turn lights on at sunrise
+  description: ''
+  trigger:
+  - event: sunrise
+    offset: -00:45:00
+    platform: sun
+  condition:
+  - condition: zone
+    entity_id: person.nirim_2
+    zone: zone.home
+  action:
+  - data: {}
+    entity_id: script.sunrise_s
+    service: script.turn_on
+- id: '1581581528265'
+  alias: cancel sunrise
+  description: ''
+  trigger:
+  - entity_id: group.bedroom
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - entity_id: script.sunrise_s
+    service: script.turn_off

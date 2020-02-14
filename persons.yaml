@@ -1,0 +1,9 @@
+
+  - name: Nirim
+    id: nirim79d32
+    user_id: 79d328d0ec704bd594996a760071df9a
+    device_trackers:
+      - device_tracker.mar_lx3a_w
+      - device_tracker.huawei_p30_lite
+#      - device_tracker.mar_lx3a
+#      - device_tracker.google_maps

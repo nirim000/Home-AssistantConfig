@@ -1,0 +1,12 @@
+
+  bedroom:
+    all: true
+    entities:
+      - light.tas_bulb1
+      - light.tas_bulb2
+      - light.tas_bulb3
+  bedroom_fixture:
+    all: true
+    entities:
+      - light.tas_bulb2
+      - light.tas_bulb3

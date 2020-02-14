@@ -1,0 +1,614 @@
+  test:
+    sequence:
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 80
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          seconds: 30
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 160
+          color_temp: 174
+  sunrise_s:
+    sequence:
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 4
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 8
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 12
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 16
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 20
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 24
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 28
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 32
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 36
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 40
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 44
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 48
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 52
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 56
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 60
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 64
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 68
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 72
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 76
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 80
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 84
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 88
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 92
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 96
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 100
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 104
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 108
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 112
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 116
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 120
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 124
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 128
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 132
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 136
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 140
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 144
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 148
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 152
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 156
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 160
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 164
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 168
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 172
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 176
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 180
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 185
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 190
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 195
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 200
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 205
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 210
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 215
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 220
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 225
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 230
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 235
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 240
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 245
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 250
+          color_temp: 174
+      - delay:
+          # Supports milliseconds, seconds, minutes, hours, days
+          minutes: 1
+      
+      # This is written using the Script Syntax
+      - service: light.turn_on
+        data:
+          entity_id: group.bedroom
+          brightness: 255
+          color_temp: 174
