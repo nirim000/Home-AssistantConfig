@@ -10,3 +10,14 @@
     entities:
       - light.tas_bulb2
       - light.tas_bulb3
+  sink_fixture:
+    all: true
+    entities:
+      - light.tas_bulb6
+      - light.tas_bulb7
+  kitchen:
+    all: true
+    entities:
+      - light.tas_bulb5
+      - light.tas_bulb6
+      - light.tas_bulb7
