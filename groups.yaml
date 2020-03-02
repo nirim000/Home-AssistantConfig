@@ -21,3 +21,13 @@
       - light.tas_bulb5
       - light.tas_bulb6
       - light.tas_bulb7
+  all:
+    all: true
+    entities:
+      - light.tas_bulb1
+      - light.tas_bulb2
+      - light.tas_bulb3
+      - light.tas_bulb4
+      - light.tas_bulb5
+      - light.tas_bulb6
+      - light.tas_bulb7
