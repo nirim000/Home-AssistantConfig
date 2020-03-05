@@ -109,7 +109,7 @@
   alias: morning
   description: ''
   trigger:
-  - at: 09:30:00
+  - at: '15:00:00'
     platform: time
   condition: []
   action:

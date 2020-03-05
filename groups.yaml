@@ -10,6 +10,10 @@
     entities:
       - light.tas_bulb2
       - light.tas_bulb3
+  laundry room:
+    all: true
+    entities:
+      - light.tas_bulb4
   sink_fixture:
     all: true
     entities:
