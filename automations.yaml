@@ -109,9 +109,19 @@
   alias: morning
   description: ''
   trigger:
-  - at: '12:00:00'
+  - at: '14:00:00'
     platform: time
   condition: []
   action:
   - entity_id: script.sunrise_s
     service: script.turn_on
+- id: '1583632704831'
+  alias: swipe
+  description: ''
+  trigger:
+  - payload: 'on'
+    platform: mqtt
+    topic: mi/swipe
+  condition: []
+  action:
+  - service: script.all_tog

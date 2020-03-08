@@ -612,3 +612,11 @@
           entity_id: group.bedroom
           brightness: 255
           color_temp: 174
+  all_tog:
+    sequence:
+      # This is written using the Script Syntax
+      - service: light.toggle
+        data:
+          entity_id: group.all
+          brightness: 153
+          color_temp: 174
