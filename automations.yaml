@@ -116,12 +116,34 @@
   - entity_id: script.sunrise_s
     service: script.turn_on
 - id: '1583632704831'
-  alias: swipe
+  alias: swipe off
   description: ''
   trigger:
   - payload: 'on'
     platform: mqtt
     topic: mi/swipe
-  condition: []
+  condition:
+  - condition: state
+    entity_id: group.all
+    state: 'on'
   action:
-  - service: script.all_tog
+  - data: {}
+    entity_id: group.all
+    service: light.turn_off
+- id: '1583715089180'
+  alias: swipe on
+  description: ''
+  trigger:
+  - payload: 'on'
+    platform: mqtt
+    topic: mi/swipe
+  condition:
+  - condition: state
+    entity_id: group.all
+    state: 'off'
+  action:
+  - data:
+      brightness: 153
+      color_temp: 327
+    entity_id: group.all
+    service: light.turn_on
