@@ -2,24 +2,15 @@
   alias: Turn off the lights when I leave home
   description: ''
   trigger:
-  - entity_id: person.nirim_2
+  - entity_id: person.gabriel
     event: leave
     platform: zone
     zone: zone.home
   condition: []
   action:
-  - device_id: ae46d6f2e69b440eb61d79ce90bc4d73
-    domain: light
-    entity_id: light.tas_bulb1
-    type: turn_off
-  - device_id: bb739f7d35e24bdd852daca9344abb56
-    domain: light
-    entity_id: light.tas_bulb2
-    type: turn_off
-  - device_id: dd75ae5601e34bea90ee515ccf399637
-    domain: light
-    entity_id: light.tas_bulb3
-    type: turn_off
+  - data: {}
+    entity_id: group.all
+    service: light.turn_off
 - id: '1581248413802'
   alias: Turn on the lights when I get home
   description: ''
