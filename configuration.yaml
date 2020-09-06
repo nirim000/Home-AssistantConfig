@@ -10,6 +10,10 @@ default_config:
 # Text to speech
 tts:
   - platform: google_translate
+  
+weather:
+  - platform: environment_canada
+    station: "QC/s0000635"
 
 google_assistant:
   project_id: !secret id_gassistant
@@ -53,13 +57,13 @@ zone: !include zones.yaml
 person: !include persons.yaml
 
 recorder:
-  purge_keep_days: 5
+  purge_keep_days: 93
   purge_interval: 1
-  db_url: !secret mysql_url
+  db_url: sqlite:///mnt/storage/database/recorder
   exclude:
     domains:
       - automation
-      - updater
+      - Updater
 
 http:
   ssl_certificate: !secret ssl_certificate
@@ -74,6 +78,8 @@ sensor:
     unit_of_measurement: days
     scan_interval: 10800
     command: !secret cert_expiry
+  - platform: environment_canada
+    station: "QC/s0000635"
 
 mqtt:
   broker: 127.0.0.1
