@@ -138,3 +138,31 @@
       color_temp: 327
     entity_id: group.all
     service: light.turn_on
+- id: '1599608428489'
+  alias: Night
+  description: ''
+  trigger:
+  - event: sunset
+    offset: -00:45:00
+    platform: sun
+  condition: []
+  action:
+  - data:
+      value: 1
+    entity_id: input_number.nighttime
+    service: input_number.set_value
+  mode: single
+- id: '1599608589079'
+  alias: Day
+  description: ''
+  trigger:
+  - event: sunrise
+    offset: 00:45:00
+    platform: sun
+  condition: []
+  action:
+  - data:
+      value: 0
+    entity_id: input_number.nighttime
+    service: input_number.set_value
+  mode: single

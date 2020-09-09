@@ -1,4 +1,8 @@
 
+homeassistant:
+  external_url: !secret external_url
+  internal_url: !secret internal_url
+
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
@@ -58,7 +62,6 @@ person: !include persons.yaml
 
 recorder:
   purge_keep_days: 93
-  purge_interval: 1
   db_url: sqlite:///mnt/storage/database/recorder
   exclude:
     domains:
@@ -68,9 +71,14 @@ recorder:
 http:
   ssl_certificate: !secret ssl_certificate
   ssl_key: !secret ssl_key
-  base_url: !secret base_url
   server_port: 8123
   ssl_profile: modern
+
+binary_sensor:
+  - platform: tod
+    name: Night
+    after: sunset
+    before: sunrise
 
 sensor:
   - platform: command_line
@@ -80,6 +88,17 @@ sensor:
     command: !secret cert_expiry
   - platform: environment_canada
     station: "QC/s0000635"
+  - platform: mitemp_bt
+    rounding: True
+    decimals: 1
+    period: 60
+    log_spikes: False
+    use_median: False
+    active_scan: False
+    hci_interface: 0
+    batt_entities: False
+    report_unknown: False
+    whitelist: False
 
 mqtt:
   broker: 127.0.0.1
@@ -94,6 +113,28 @@ panel_iframe:
     title: Configurator
     icon: mdi:wrench
     url: !secret conf_url
+
+input_number:
+  slider1:
+    name: Slider
+    initial: 30
+    min: -20
+    max: 35
+    step: 1
+  box1:
+    name: Numeric Input Box
+    initial: 30
+    min: -20
+    max: 35
+    step: 1
+    mode: box
+  nightime:
+    name: Nightime value
+    initial: 0
+    min: 0
+    max: 1
+    step: 1
+    mode: box
 
 #device_tracker:
 #  - platform: google_maps
