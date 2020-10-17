@@ -15,6 +15,22 @@ default_config:
 tts:
   - platform: google_translate
   
+alexa:
+  smart_home:
+    locale: en-CA
+    endpoint: https://api.amazonalexa.com/v3/events
+    client_id: !secret alexa_client_id
+    client_secret: !secret alexa_client_secret
+    filter:
+      include_entities:
+        - sensor.mi_h_e72e00b26052
+        - sensor.mi_t_e72e00b26052
+      exclude_domains:
+        - sensor
+        - group
+        - input_number
+        - binary_sensor
+  
 weather:
   - platform: environment_canada
     station: "QC/s0000635"

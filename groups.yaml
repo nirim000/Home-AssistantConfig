@@ -25,6 +25,10 @@
       - light.tas_bulb5
       - light.tas_bulb6
       - light.tas_bulb7
+  workshop:
+    all: true
+    entities:
+      - light.lifx_bulb8
   all:
     all: true
     entities:
@@ -35,3 +39,4 @@
       - light.tas_bulb5
       - light.tas_bulb6
       - light.tas_bulb7
+      - light.lifx_bulb8
