@@ -35,12 +35,6 @@ weather:
   - platform: environment_canada
     station: "QC/s0000635"
 
-google_assistant:
-  project_id: !secret id_gassistant
-  service_account: !secret saccount_json
-  report_state: true
-  expose_by_default: true
-
 device_tracker:
   - platform: bluetooth_tracker
     interval_seconds: 30
