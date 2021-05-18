@@ -72,7 +72,7 @@ person: !include persons.yaml
 
 recorder:
   purge_keep_days: 93
-  db_url: sqlite:///mnt/storage/database/recorder
+  db_url: sqlite:////mnt/storage/database/recorder/home-assistant.db
   exclude:
     domains:
       - automation
